@@ -1,11 +1,21 @@
 
 
+<!-- <div class="text-layaut">
+  <h1 >{{ nombre | titlecase }}</h1>
+  <h2>{{ valor | number }}</h2>
+  <h2> {{ obj | json }} </h2>
+</div>
 
-<h1>{{ nombre | titlecase }}</h1>
-<h2>{{ valor | number }}</h2>
-
-<h2> {{ obj | json }} </h2>
-
-<button (click)="mostrarNombre()">
-  Cambiar Nombre
+<button pButton (click)="mostrarNombre()"
+        label="Cambiar Nombre"
+        icon="pi pi-shield"
+        iconPos="right"
+        class="p-button-help">
 </button>
+
+<p-card [header]="nombre | titlecase" subheader="esto es un subheader">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+      quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+</p-card> -->
+
+<app-menu></app-menu>
