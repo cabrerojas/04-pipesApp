@@ -31,21 +31,49 @@
     </p>
 </div>
 
-
 <div class="p-grid">
-    <div class="p-col-4">
-        <p-card header="Uppercase de:" [subheader]="nombreLower">
-            Resultado: {{ nombreLower | uppercase }}
+    <div class="p-col-6">
+        <p-card >
+            <ul>
+                <li> fecha </li>
+                <li> fecha | date</li>
+                <li> fecha | date:'short'</li>
+                <li>fecha | date:'long'</li>
+                <li> fecha | date:'mm:ss' </li>
+                <li> fecha | date:'MMMM dd, yyyy' </li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li>fecha | date:'long': 'GMT-6'</li>
+                <li>fecha | date:'long': 'GMT-4'</li>
+                <li>fecha | date:'long': '': 'fr'</li>
+                
+            </ul>
+          
         </p-card>
     </div>
-    <div class="p-col-4">
-        <p-card header="Lowercase de:" [subheader]="nombreUpper">
-            Resultado: {{ nombreUpper | lowercase }}
+    <div class="p-col-6">
+        <p-card >
+           <ul>
+                <li>{{ fecha }} </li>
+                <li>{{ fecha | date }}</li>
+                <li>{{ fecha | date:'short' }}</li>
+                <li>{{ fecha | date:'long' }}</li>
+                <li>{{ fecha | date:'mm:ss' }}</li>
+                <li>{{ fecha | date:'MMMM dd, yyyy' }}</li>
+            </ul>
+
+            <hr>
+
+            <ul>
+                <li>{{ fecha | date:'long': 'GMT-6' }}</li>
+                <li>{{ fecha | date:'long': 'GMT-4' }}</li>
+                <li>{{ fecha | date:'long': '': 'fr' }}</li>
+              
+            </ul>
         </p-card>
     </div>
-    <div class="p-col-4">
-        <p-card header="TitleCase de:" [subheader]="nombreCompleto">
-            Resultado: {{ nombreCompleto | titlecase }}
-        </p-card>
-    </div>
+    
 </div>

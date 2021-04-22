@@ -10,6 +10,9 @@ export class BasicosComponent  {
   nombreLower = 'guillermo';
   nombreUpper = 'GUILLERMO';
   nombreCompleto = 'GuILLermo CaBRERa';
-  constructor() { }
+
+
+  fecha: Date = new Date();
+
 
 }
