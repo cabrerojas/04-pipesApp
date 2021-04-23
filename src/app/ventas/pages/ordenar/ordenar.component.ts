@@ -45,7 +45,7 @@ export class OrdenarComponent  {
     this.enMayusculas = !this.enMayusculas;
   }
 
-  cambiarOrden( valor: string ){
+  cambiarOrden( valor: string ): void{
     this.ordenarPor = valor;
   }
 

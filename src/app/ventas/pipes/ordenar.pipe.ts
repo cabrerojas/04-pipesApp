@@ -9,7 +9,7 @@ export class OrdenarPipe implements PipeTransform {
   transform(heroes: Heroe[], ordenarPor: string = 'sin valor'): Heroe[] {
 
 
-    switch(ordenarPor){
+    switch (ordenarPor){
 
       case 'nombre':
         return heroes.sort( (a, b) => (a.nombre > b.nombre) ? 1 : -1 );
